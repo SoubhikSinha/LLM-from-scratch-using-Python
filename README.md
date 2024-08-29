@@ -1,1 +1,1 @@
-# LLM-from-scratch-using-Python
+# Large Language Model(LLM) from scratch using Python
