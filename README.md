@@ -8,7 +8,7 @@ I would like to extend my sincere thanks to **[freeCodeCamp](https://www.freecod
 <br>
 <br>
 
-## Introduction : What is an LLM? 🤔
+## Introduction : What is an LLM ? 🤔
 
 Imagine you’re texting a friend, and they ask :<br>
 
