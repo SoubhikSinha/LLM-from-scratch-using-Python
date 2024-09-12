@@ -28,3 +28,8 @@ Well, that's a small funny introduction of one of the use cases of LLMs. Now, le
 <br>
 
 Large Language Models are the backbone of many advanced AI systems today. They are trained on vast amounts of text data, enabling them to understand, generate, and even engage in meaningful conversations with users. In this project, we'll explore how LLMs work from the ground up, covering everything from tokenization and embeddings to training techniques and model fine-tuning.
+
+<br>
+
+According to **AWS**🔻
+> **Large Language Models (LLMs)** are advanced deep learning models pre-trained on massive datasets, typically utilizing the transformer architecture. Transformers consist of an encoder and decoder with self-attention mechanisms, enabling them to understand relationships between words and extract meanings from text sequences. Unlike earlier RNNs that process inputs sequentially, transformers handle entire sequences in parallel, making them more efficient and faster to train using GPUs. Their architecture supports massive models, often with hundreds of billions of parameters, allowing them to ingest vast amounts of data from sources like Common Crawl and Wikipedia, learning grammar, language, and knowledge through self-learning.
