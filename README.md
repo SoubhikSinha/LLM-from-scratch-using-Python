@@ -8,7 +8,7 @@ I would like to extend my sincere thanks to **[freeCodeCamp](https://www.freecod
 <br>
 <br>
 
-## Introduction : What is an LLM ? 🤔
+## Introduction : What is an LLM? 🤔
 
 Imagine you’re texting a friend, and they ask :<br>
 
@@ -33,3 +33,29 @@ Large Language Models are the backbone of many advanced AI systems today. They a
 
 According to **AWS**🔻
 > **Large Language Models (LLMs)** are advanced deep learning models pre-trained on massive datasets, typically utilizing the transformer architecture. Transformers consist of an encoder and decoder with self-attention mechanisms, enabling them to understand relationships between words and extract meanings from text sequences. Unlike earlier RNNs that process inputs sequentially, transformers handle entire sequences in parallel, making them more efficient and faster to train using GPUs. Their architecture supports massive models, often with hundreds of billions of parameters, allowing them to ingest vast amounts of data from sources like Common Crawl and Wikipedia, learning grammar, language, and knowledge through self-learning.
+
+<br>
+
+Now that you have an introductory knowledge about **LLMs**, it's time to dive into the components of this repo 🔻<br>
+
+> **NOTE** : Because the notebook size are pretty big - you may not be able to render the notebook / code blocks. Thus, it is better to ***fork*** the repository / download the individual files to go through them.
+
+<br>
+<br>
+
+### [PyTorch Basic Functions](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/pytorch_basic_funcs.ipynb) 👇 <br>
+
+This notebook contains all the necessary basic functions (from PyTorch) needed to build the LLM.
+
+<br>
+<br>
+
+### [PyTorch CUDA GPU](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/pytorch_basic_funcs.ipynb) 👇 <br>
+
+Since the final LLM model will be trained on the **[OpenWebText](https://huggingface.co/datasets/Skylion007/openwebtext)** dataset, which was also used to train the **GPT-2** model, training on a CPU would take an extremely long time ☠️. Instead of using a CPU, we trained the model on a GPU (Graphical Processing Unit). The GPU used here is the **NVIDIA GeForce GTX 1050**.<br><br>
+
+Incorporating GPU acceleration (NVIDIA CUDA) into model training can be challenging. This notebook gives you an idea how fast GPUs are as compared to the CPUs.
+
+<br>
+
+> **NOTE**: Each notebook in this repository is thoroughly commented, ensuring that you understand the "_Why's and How's_". The comments will provide a clear explanation as you go through the code.
