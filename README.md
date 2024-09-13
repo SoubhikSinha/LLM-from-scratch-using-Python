@@ -68,3 +68,13 @@ Incorporating GPU acceleration (NVIDIA CUDA) into model training can be challeng
 A **`Bi-Gram Model`** is a straightforward yet powerful tool in Natural Language Processing (NLP) and language modeling. It works by looking at pairs of consecutive words in a text to predict what comes next. For example, if we consider the sentence "I love cats," the bi-grams would be "I love" and "love cats." By examining how often these word pairs appear together, the model learns the likelihood of a word following another. This helps in generating text that feels natural. However, while bi-gram models capture basic word relationships, they only consider immediate word pairs, so they might miss out on more complex or longer-term patterns in language. Despite this, they’re a key building block for understanding how words fit together and are often used as a foundation for more advanced models.
 <br>
 <br>
+*Keywords : Batch Size, Block Size, Encoder-Decoder, Tensors, Optimizers*
+<br>
+<br>
+This *Bi-Gram Model* is trained on the dataset (*better I call it a book*) taken from **Project Gutenberg  : [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661)** <br>
+> **NOTE** : Data Pre-processing was not the motive of this project (thus, I omitted it), but rather building the model was.
+
+<br>
+<br>
+
+
