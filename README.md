@@ -50,7 +50,7 @@ This notebook contains all the necessary basic functions (from PyTorch) needed t
 <br>
 <br>
 
-### [PyTorch CUDA GPU](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/pytorch_basic_funcs.ipynb) 👇 <br>
+### [PyTorch CUDA GPU](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/pytorch_CUDA_GPU.ipynb) 👇 <br>
 
 Since the final LLM model will be trained on the **[OpenWebText](https://huggingface.co/datasets/Skylion007/openwebtext)** dataset, which was also used to train the **GPT-2** model, training on a CPU would take an extremely long time ☠️. Instead of using a CPU, we trained the model on a GPU (Graphical Processing Unit). The GPU used here is the **NVIDIA GeForce GTX 1050**.<br><br>
 
@@ -59,3 +59,12 @@ Incorporating GPU acceleration (NVIDIA CUDA) into model training can be challeng
 <br>
 
 > **NOTE**: Each notebook in this repository is thoroughly commented, ensuring that you understand the "_Why's and How's_". The comments will provide a clear explanation as you go through the code.
+
+<br>
+<br>
+
+### [Bi-Gram](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/bigram.ipynb) 👇 <br>
+
+A **`Bi-Gram Model`** is a straightforward yet powerful tool in Natural Language Processing (NLP) and language modeling. It works by looking at pairs of consecutive words in a text to predict what comes next. For example, if we consider the sentence "I love cats," the bi-grams would be "I love" and "love cats." By examining how often these word pairs appear together, the model learns the likelihood of a word following another. This helps in generating text that feels natural. However, while bi-gram models capture basic word relationships, they only consider immediate word pairs, so they might miss out on more complex or longer-term patterns in language. Despite this, they’re a key building block for understanding how words fit together and are often used as a foundation for more advanced models.
+<br>
+<br>
