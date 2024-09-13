@@ -84,4 +84,7 @@ Now that you have explored the implementation of the **Bi-Gram** model, we can t
 
 > **NOTE**  : This GPT model is also trained on the book: [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661). In a subsequent notebook, you will see the model trained on the **OpenWebText** dataset.
 
+<br>
+<br>
 
+# ⚠️ README.md under construction
