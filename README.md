@@ -71,10 +71,17 @@ A **`Bi-Gram Model`** is a straightforward yet powerful tool in Natural Language
 *Keywords : Batch Size, Block Size, Encoder-Decoder, Tensors, Optimizers*
 <br>
 <br>
-This *Bi-Gram Model* is trained on the dataset (*better I call it a book*) taken from **Project Gutenberg  : [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661)** <br>
-> **NOTE** : Data Pre-processing was not the motive of this project (thus, I omitted it), but rather building the model was.
+This **Bi-Gram Model** is trained on the dataset (or rather, a book) sourced from **Project Gutenberg: [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661)**
+
+> **NOTE**: The focus of this project was on building the model, not on data preprocessing, so that step has been omitted.
 
 <br>
 <br>
+
+### [GPT - Language Model (Version #1)](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/gpt-v1%20-%201.ipynb) 👇<br>
+
+Now that you have explored the implementation of the **Bi-Gram** model, we can take the first step in building our initial LLM model: _**GPT-v1 (Version 1)**_.
+
+> **NOTE**  : This GPT model is also trained on the book: [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661). In a subsequent notebook, you will see the model trained on the **OpenWebText** dataset.
 
 
