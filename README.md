@@ -150,7 +150,7 @@ In this instance, we will demonstrate a chatbot functioning through the **Comman
 
 <br>
 
-> **NOTE** : Since the GPT model is created and trained without a specific purpose, the responses to the prompts will likely be meaningless. However, one can enhance the chatbot by incorporating **RAG (Retrieval Augmented Generation)**, which allows the chatbot to function like a virtual assistant—provided it has been trained on domain-relevant data.
+> **NOTE** : The GPT model is created and trained with a general purpose, so its responses might occasionally seem less relevant or specific. However, incorporating **[Retrieval-Augmented Generation (RAG)](https://cloud.google.com/use-cases/retrieval-augmented-generation)** can significantly enhance the chatbot's functionality, allowing it to serve as a more effective virtual assistant. This enhancement provides better access to relevant information and improves the chatbot's ability to meet user needs, especially when it is trained on domain-relevant data.
 
 <br>
 <br>
