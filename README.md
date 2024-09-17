@@ -155,4 +155,18 @@ In this instance, we will demonstrate a chatbot functioning through the **Comman
 <br>
 <br>
 
+### [Gradio Application]() 👇<br>
+Last, but not least – since we’ve created a **ChatBot**, it’s time to deploy it rather than just passing CLI arguments. In this guide, we will use **[Gradio](https://www.gradio.app/)** to deploy our ChatBot. Gradio will allow us to create a user-friendly interface where🔻
+
+1.  **API Application** : The application will receive a **prompt from the user**.
+2.  **Output** : It will generate and display **text** based on the input.
+
+<br>
+
+And that said, we are done with our LLM (GPT) model implementation ! <br>
+🙌🎉🥳🎊
+
+<br>
+<br>
+
 # ⚠️ README.md under construction
