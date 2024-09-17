@@ -125,12 +125,31 @@ Alright folks, it's time to dive into some serious stuff. The dataset we'll be u
 
 <br>
 
-The **OpenWebText** dataset is quite different from the usual datasets we might download from websites like Kaggle or the UC-Irvine data repository. Instead, it's a ZIP file containing multiple sub-folders, each with numerous other ZIP files inside. Although some manual effort was involved in organizing the data, I still needed to handle the ***[Data Extraction]()*** component to ensure the data is fed into our GPT model in the correct format.
+The **OpenWebText** dataset is quite different from the usual datasets we might download from websites like Kaggle or the UC-Irvine data repository. Instead, it's a ZIP file containing multiple sub-folders, each with numerous other ZIP files inside. Although some manual effort was involved in organizing the data, I still needed to handle the ***[Data Extraction](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/DataExtract.py)*** component to ensure the data is fed into our GPT model in the correct format.
+
+> **NOTE:** Jupyter Notebooks tend to take more time in model training compared to when the code is reproduced in the format of a Python script file (**[.py]** file). Thus, the model training code is also available in the **[training.py](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/training.py)** file. Another reason for creating this Python file is that you cannot call a **Command Line Interface** inside a Jupyter Notebook.<br>
+**Why?** 👇  
+In Jupyter Notebooks, the `argparse` library is not typically suited for direct use because it is designed to parse command-line arguments, and Jupyter itself starts with its own command-line arguments that may conflict with those defined by `argparse`. When you try to use `argparse` in a notebook, it attempts to parse Jupyter’s internal arguments, which can result in errors.
+>
 
 <br>
 
-Later in this notebook, we've implemented a method to save the trained model. This allows us to load the model in a separate Python script. Through the command-line interface, we can then dynamically provide the ***batch_size*** hyperparameter value when generating new text.
+Later in this notebook, we've implemented a method to save the trained model. This allows us to load the model in a separate Python script. Through the command-line interface ( Code : ***[cmdLineParsing](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/cmdLineParsing.py)*** ), we can then dynamically provide the ***batch_size*** hyperparameter value when generating new text.
+
+<br>
+<br>
+
+### [Creating a Dummy ChatBot on CLI](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/chatbot.py) 👇<br>
 
 
+A GPT model can be utilized in many forms. Today, numerous websites have integrated chatbots to make life easier for their users, helping them get answers to questions and complete tasks with less time and effort.
+
+<br>
+
+In this instance, we will demonstrate a chatbot functioning through the **Command Line Interface (CLI)**, where it will prompt the user for input, and the GPT model will generate a response.
+
+<br>
+
+> **NOTE:** Since the GPT model is created and trained without a specific purpose, the responses to the prompts will likely be meaningless. However, one can enhance the chatbot by incorporating **RAG (Retrieval Augmented Generation)**, which allows the chatbot to function like a virtual assistant—provided it has been trained on domain-relevant data.
 
 # ⚠️ README.md under construction
