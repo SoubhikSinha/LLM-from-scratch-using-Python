@@ -123,6 +123,13 @@ Alright folks, it's time to dive into some serious stuff. The dataset we'll be u
 
 > **NOTE:** Due to the enormous size of the dataset and limited computing capacity, we've selected appropriate and "healthy" hyperparameter values to avoid overloading your system. Using inappropriate values could result in 💣💥☠️💀👻. Please use the appropriate settings to ensure a smooth and efficient process !
 
+<br>
+
+The **OpenWebText** dataset is quite different from the usual datasets we might download from websites like Kaggle or the UC-Irvine data repository. Instead, it's a ZIP file containing multiple sub-folders, each with numerous other ZIP files inside. Although some manual effort was involved in organizing the data, I still needed to handle the ***[Data Extraction]()*** component to ensure the data is fed into our GPT model in the correct format.
+
+<br>
+
+Later in this notebook, we've implemented a method to save the trained model. This allows us to load the model in a separate Python script. Through the command-line interface, we can then dynamically provide the ***batch_size*** hyperparameter value when generating new text.
 
 
 
