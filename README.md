@@ -167,6 +167,7 @@ And that said, we are done with our LLM (GPT) model implementation ! <br>
 🙌🎉🥳🎊
 
 <br>
-<br>
+
+> **NOTE** : Due to space and bandwidth limitation (even after applying Git LFS (Large File System), I m unable to upload the trained model pickle file (.pkl) into the repository - not even the compressed version (you cn try out **pickle file compression** using libraries like **[gzip](https://docs.python.org/3/library/gzip.html) or [bz2 / bzip2](https://docs.python.org/3/library/bz2.html)**
 
 # ⚠️ README.md under construction
