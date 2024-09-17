@@ -84,7 +84,46 @@ Now that you have explored the implementation of the **Bi-Gram** model, we can t
 
 > **NOTE**  : This GPT model is also trained on the book: [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661). In a subsequent notebook, you will see the model trained on the **OpenWebText** dataset.
 
+In this notebook, even though the model is still based on the **Bi-Gram Model**, we can see that the hyperparameters used are now different from what we saw in the **Bi-Gram Model Implementation**. This is because we are trying to build a **Transformer**, which is the primary building block for GPT model(s). Let us list them all here🔻
+
+ - **block_size**: The length of input sequences the model processes at once (e.g., 32 to 128 tokens).
+    
+-   **batch_size**: Number of samples processed before updating the model weights (e.g., 64 to 512).
+    
+-   **max_iters**: Total number of training iterations (e.g., 1000 to 5000).
+    
+-   **learning_rate**: The step size for updating model weights, with potential decay over time (e.g., 1e-5 to 1e-3).
+    
+-   **eval_iters**: Frequency of evaluating the model during training (e.g., every 50 to 500 iterations).
+    
+-   **n_embd**: Dimensionality of the embedding vectors (e.g., 128 to 512).
+    
+-   **n_layer**: Number of layers in the model architecture (e.g., 6 to 12).
+    
+-   **n_head**: Number of attention heads in each layer (e.g., 4 to 12).
+    
+-   **dropout**: Proportion of neurons randomly set to zero to prevent overfitting (e.g., 0.1 to 0.3).
+
+<br>
+
+> **NOTE**: Even though the dataset is relatively small (just a book) compared to what we will use in the next version of our GPT model, and the model is being trained on a GPU, the training and validation process may still take a significant amount of time. This is highly dependent on the values chosen for each hyperparameter. Therefore, be patient 🙂 (and not 🤪) — results will take time to show up ⌛.
+
+<br>
+
+The main goal of our GPT model (for now) is to achieve the lowest Validation Loss and generate content that appears relevant and meaningful. Don’t get disheartened if you encounter some "alien-like" language being generated 👽.
+
 <br>
 <br>
+
+### [GPT - Language Model (Version #2)](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/gpt-v1%20-%202.ipynb) 👇<br>
+
+Alright folks, it's time to dive into some serious stuff. The dataset we'll be using is **[OpenWebtext](https://huggingface.co/datasets/Skylion007/openwebtext)**. This is the same dataset on which **[OpenAI's GPT-2](https://openai.com/index/better-language-models/)** was trained. 
+
+<br>
+
+> **NOTE:** Due to the enormous size of the dataset and limited computing capacity, we've selected appropriate and "healthy" hyperparameter values to avoid overloading your system. Using inappropriate values could result in 💣💥☠️💀👻. Please use the appropriate settings to ensure a smooth and efficient process !
+
+
+
 
 # ⚠️ README.md under construction
