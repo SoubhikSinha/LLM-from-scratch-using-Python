@@ -8,7 +8,7 @@ I would like to extend my sincere thanks to **[freeCodeCamp](https://www.freecod
 <br>
 <br>
 
-## Introduction : What is an LLM? 🤔
+## Introduction : What is an LLM ? 🤔
 
 Imagine you’re texting a friend, and they ask :<br>
 
@@ -58,7 +58,7 @@ Incorporating GPU acceleration (NVIDIA CUDA) into model training can be challeng
 
 <br>
 
-> **NOTE**: Each notebook in this repository is thoroughly commented, ensuring that you understand the "_Why's and How's_". The comments will provide a clear explanation as you go through the code.
+> **NOTE** : Each notebook in this repository is thoroughly commented, ensuring that you understand the "_Why's and How's_". The comments will provide a clear explanation as you go through the code.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ A **`Bi-Gram Model`** is a straightforward yet powerful tool in Natural Language
 <br>
 This **Bi-Gram Model** is trained on the dataset (or rather, a book) sourced from **Project Gutenberg: [The Adventures of Sherlock Holmes](https://www.gutenberg.org/ebooks/1661)**
 
-> **NOTE**: The focus of this project was on building the model, not on data preprocessing, so that step has been omitted.
+> **NOTE** : The focus of this project was on building the model, not on data preprocessing, so that step has been omitted.
 
 <br>
 <br>
@@ -106,7 +106,7 @@ In this notebook, even though the model is still based on the **Bi-Gram Model**,
 
 <br>
 
-> **NOTE**: Even though the dataset is relatively small (just a book) compared to what we will use in the next version of our GPT model, and the model is being trained on a GPU, the training and validation process may still take a significant amount of time. This is highly dependent on the values chosen for each hyperparameter. Therefore, be patient 🙂 (and not 🤪) — results will take time to show up ⌛.
+> **NOTE** : Even though the dataset is relatively small (just a book) compared to what we will use in the next version of our GPT model, and the model is being trained on a GPU, the training and validation process may still take a significant amount of time. This is highly dependent on the values chosen for each hyperparameter. Therefore, be patient 🙂 (and not 🤪) — results will take time to show up ⌛.
 
 <br>
 
@@ -121,13 +121,13 @@ Alright folks, it's time to dive into some serious stuff. The dataset we'll be u
 
 <br>
 
-> **NOTE:** Due to the enormous size of the dataset and limited computing capacity, we've selected appropriate and "healthy" hyperparameter values to avoid overloading your system. Using inappropriate values could result in 💣💥☠️💀👻. Please use the appropriate settings to ensure a smooth and efficient process !
+> **NOTE** : Due to the enormous size of the dataset and limited computing capacity, we've selected appropriate and "healthy" hyperparameter values to avoid overloading your system. Using inappropriate values could result in 💣💥☠️💀👻. Please use the appropriate settings to ensure a smooth and efficient process !
 
 <br>
 
 The **OpenWebText** dataset is quite different from the usual datasets we might download from websites like Kaggle or the UC-Irvine data repository. Instead, it's a ZIP file containing multiple sub-folders, each with numerous other ZIP files inside. Although some manual effort was involved in organizing the data, I still needed to handle the ***[Data Extraction](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/DataExtract.py)*** component to ensure the data is fed into our GPT model in the correct format.
 
-> **NOTE:** Jupyter Notebooks tend to take more time in model training compared to when the code is reproduced in the format of a Python script file (**[.py]** file). Thus, the model training code is also available in the **[training.py](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/training.py)** file. Another reason for creating this Python file is that you cannot call a **Command Line Interface** inside a Jupyter Notebook.<br>
+> **NOTE** : Jupyter Notebooks tend to take more time in model training compared to when the code is reproduced in the format of a Python script file (**[.py]** file). Thus, the model training code is also available in the **[training.py](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/training.py)** file. Another reason for creating this Python file is that you cannot call a **Command Line Interface** inside a Jupyter Notebook.<br><br>
 **Why?** 👇  
 In Jupyter Notebooks, the `argparse` library is not typically suited for direct use because it is designed to parse command-line arguments, and Jupyter itself starts with its own command-line arguments that may conflict with those defined by `argparse`. When you try to use `argparse` in a notebook, it attempts to parse Jupyter’s internal arguments, which can result in errors.
 >
@@ -150,6 +150,9 @@ In this instance, we will demonstrate a chatbot functioning through the **Comman
 
 <br>
 
-> **NOTE:** Since the GPT model is created and trained without a specific purpose, the responses to the prompts will likely be meaningless. However, one can enhance the chatbot by incorporating **RAG (Retrieval Augmented Generation)**, which allows the chatbot to function like a virtual assistant—provided it has been trained on domain-relevant data.
+> **NOTE** : Since the GPT model is created and trained without a specific purpose, the responses to the prompts will likely be meaningless. However, one can enhance the chatbot by incorporating **RAG (Retrieval Augmented Generation)**, which allows the chatbot to function like a virtual assistant—provided it has been trained on domain-relevant data.
+
+<br>
+<br>
 
 # ⚠️ README.md under construction
