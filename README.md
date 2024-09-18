@@ -155,7 +155,7 @@ In this instance, we will demonstrate a chatbot functioning through the **Comman
 <br>
 <br>
 
-### [Gradio Application]() 👇<br>
+### [Gradio Application](https://github.com/sricks404/LLM-from-scratch-using-Python/blob/main/GradioApp.py) 👇<br>
 Last, but not least – since we’ve created a **ChatBot**, it’s time to deploy it rather than just passing CLI arguments. In this guide, we will use **[Gradio](https://www.gradio.app/)** to deploy our ChatBot. Gradio will allow us to create a user-friendly interface where🔻
 
 1.  **API Application** : The application will receive a **prompt from the user**.
