@@ -164,5 +164,116 @@ Last, but not least – since we’ve created a **ChatBot**, it’s time to depl
 <br>
 <br>
 
+
+## **Running Locally** 👇
+
+### **1. Clone the Repository**
+
+`git clone https://github.com/SoubhikSinha/LLM-from-scratch-using-Python.git` 
+
+### **2. Create a Virtual Environment**
+
+You can either create the virtual environment in the same directory or use a central Anaconda environment directory:
+
+-   **Option 1**:
+    
+    `conda create --name LLM python=3.11` 
+    
+-   **Option 2**:
+        
+    `conda create --prefix ./LLM python=3.11` 
+    
+
+### **3. Activate the Conda Environment**
+
+`conda activate ./LLM` 
+
+### **4. Install Required Libraries**
+
+`pip install -r requirements.txt` 
+
+### **5. Register a Jupyter Notebook Kernel**
+
+`python -m ipykernel install --user --name=LLM --display-name "LLM-cuda-gpt"` 
+
+This will allow you to use the `LLM` environment in Jupyter Notebook. Choose the `"LLM-cuda-gpt"` kernel when running notebooks in your editor (e.g., VS Code).
+
+### **6. Set Up GPU Support for PyTorch**
+
+If your system has an NVIDIA GPU, follow this tutorial to enable GPU support for PyTorch:  
+[How to setup NVIDIA GPU for PyTorch on Windows 10/11](https://www.youtube.com/watch?v=r7Am-ZGMef8&t=381s).
+
+> **Note:** Ensure GPU integration is configured in the same Conda environment (`LLM`).
+
+----------
+
+## **Suggested Workflow**
+
+Follow the notebooks in the order below for a structured understanding of the concepts:
+
+1.  **`pytorch_basic_funcs.ipynb`**: Learn the basic PyTorch functions.
+2.  **`pytorch_CUDA_GPU.ipynb`**: Understand how to leverage GPU for PyTorch operations.
+3.  **`bigram.ipynb`**: Explore the working of a Bi-Gram model.
+4.  **`gpt-v1_1.ipynb`**: Dive into the architecture of GPT using the "Attention is All You Need" paper. [[Paper Link](https://arxiv.org/abs/1706.03762)]
+
+----------
+
+## **Working with OpenWebText Dataset**
+
+To train the GPT model on a large dataset like **[OpenWebText](https://huggingface.co/datasets/Skylion007/openwebtext)**:
+
+1.  **Prepare the Dataset**:
+    
+    -   Download and organize the dataset ZIP files into the `OpenWebText` folder.
+    -   Ensure all files named `urlsf_subset*` are sequentially arranged in the folder.
+2.  **Extract the Data**:
+    
+    -   Run the data extraction program:
+              
+        `python DataExtract.py` 
+        
+    -   This generates three files: `train.txt`, `val.txt`, and `vocab.txt`.
+    
+    > **Note:** Ensure the path to the `OpenWebText` folder is correctly set in the script.
+    
+3.  **Train GPT**:
+    
+    -   Open and run the notebook `gpt_v1-2.ipynb`.
+
+----------
+
+## **Interactive Chatbot**
+
+### **Command-Line Interface (CLI)**
+
+Run the chatbot with a specified batch size:
+
+`python chatbot.py -batch_size 32` 
+
+> You can experiment with batch sizes like `16`, `32`, or `64`.
+
+### **Gradio Interface**
+
+-   Run the Gradio app:
+        
+    `python GradioApp.py` 
+    
+-   Open the IP address provided (e.g., `http://127.0.0.1:7860`) to access the GPT model in a minimalistic web interface.
+    
+-   Optionally, deploy your model to [HuggingFace](https://huggingface.co/) for broader access.
+    
+
+----------
+
+## **Key Notebooks**
+
+-   **`pytorch_basic_funcs.ipynb`**: Introduction to PyTorch.
+-   **`pytorch_CUDA_GPU.ipynb`**: GPU integration with PyTorch.
+-   **`bigram.ipynb`**: Bi-Gram model fundamentals.
+-   **`gpt-v1_1.ipynb`**: GPT architecture basics.
+-   **`gpt_v1-2.ipynb`**: Training GPT with OpenWebText.
+
+<br>
+
 ### And that said, we are done with our LLM (GPT) model implementation ! <br>
 ### 🙌🎉🥳🎊
